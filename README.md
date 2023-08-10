@@ -1,9 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+## Video explanations
+```bash
+Spanish --> https://youtu.be/6uhDfucZ88I
+English --> https://youtu.be/53op4uPIR2E
+```
 
 ## Getting Started
-
-First, run the development server:
-
 ```bash
 npm run dev
 # or
@@ -14,21 +17,27 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## First part
+```bash
+In the first part, the person must press "Connect Wallet", if the person is in the Mumbai network,the useState Change is set to true, if not, the useState Change is set to false they must modify their network by clicking on "Change Network". Next the Connected useState is in true.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Second part
+```bash
+If the person connected successfully, You will see the start button when you press it the useState Start will be set to true and the survey will be displayed
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Third part
+```bash
+When you start the survey you will have x seconds to answer otherwise it will go until the last one. To go to the following surveys you must press next(). When the useState Step is greater than 3 (that is, it reached the last one) it shows the SEND button with which it calls the contract function and sends the questionnaire to the blockchain
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+

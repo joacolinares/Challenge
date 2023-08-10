@@ -1,8 +1,8 @@
-import './globals.css'
+import './style/style.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js"></script>
+      </head>
+      <body >{children}</body>
+
     </html>
   )
 }
