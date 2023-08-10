@@ -8,6 +8,8 @@ English --> https://youtu.be/53op4uPIR2E
 
 ## Getting Started
 ```bash
+
+Install Next ---> npx create-next-app@latest
 npm run dev
 # or
 yarn dev
